@@ -1,8 +1,7 @@
-
 local v14 = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))();
 local v15 = v14:CreateWindow({
     Title = "Bear Hub [Premium ]",-- thay tên bạn muốn đặt
-    SubTitle = "By QuangHuy",-- tên bạn
+    SubTitle = "By Quanghuy",-- tên bạn
     TabWidth = 100,
     Theme = "Light",--màu
     Acrylic = false,
@@ -10,6 +9,9 @@ local v15 = v14:CreateWindow({
     MinimizeKey = Enum.KeyCode.End
 });
 local v16 = {
+    Home = v15:AddTab({
+        Title = "Tab Information"
+    }),
     Main = v15:AddTab({
         Title = "Tab Farming"
     }),
@@ -170,8 +172,7 @@ function CheckLevel()
         elseif ((v197 == 190) or (v197 <= 209) or (SelectMonster == "Prisoner")) then
             Ms = "Prisoner";
             NameQuest = "PrisonerQuest";
-            QuestLv = 1;
-            NameMon = "Prisoner";
+            QuestLv = 1            NameMon = "Prisoner";
             CFrameQ = CFrame.new(5310.60547, 0.350014925, 474.946594, 0.0175017118, 0, 0.999846935, 0, 1, 0, - 0.999846935, 0, 0.0175017118);
             CFrameMon = CFrame.new(4937.31885, 0.332031399, 649.574524, 0.694649816, 0, - 0.719348073, 0, 1, 0, 0.719348073, 0, 0.694649816);
         elseif ((v197 == 210) or (v197 <= 249) or (SelectMonster == "Dangerous Prisoner")) then
@@ -277,111 +278,4 @@ function CheckLevel()
             NameMon = "Galley Captain";
             CFrameQ = CFrame.new(5258.2788085938, 38.526931762695, 4050.044921875);
             CFrameMon = CFrame.new(5677.6772460938, 92.786109924316, 4966.6323242188);
-        end
-    end
-    if Sea2 then
-        if ((v197 == 700) or (v197 <= 724) or (SelectMonster == "Raider")) then
-            Ms = "Raider";
-            NameQuest = "Area1Quest";
-            QuestLv = 1;
-            NameMon = "Raider";
-            CFrameQ = CFrame.new(- 427.72567749023, 72.99634552002, 1835.9426269531);
-            CFrameMon = CFrame.new(68.874565124512, 93.635643005371, 2429.6752929688);
-        elseif ((v197 == 725) or (v197 <= 774) or (SelectMonster == "Mercenary")) then
-            Ms = "Mercenary";
-            NameQuest = "Area1Quest";
-            QuestLv = 2;
-            NameMon = "Mercenary";
-            CFrameQ = CFrame.new(- 427.72567749023, 72.99634552002, 1835.9426269531);
-            CFrameMon = CFrame.new(- 864.85009765625, 122.47104644775, 1453.1505126953);
-        elseif ((v197 == 775) or (v197 <= 799) or (SelectMonster == "Swan Pirate")) then
-            Ms = "Swan Pirate";
-            NameQuest = "Area2Quest";
-            QuestLv = 1;
-            NameMon = "Swan Pirate";
-            CFrameQ = CFrame.new(635.61151123047, 73.096351623535, 917.81298828125);
-            CFrameMon = CFrame.new(1065.3669433594, 137.64012145996, 1324.3798828125);
-        elseif ((v197 == 800) or (v197 <= 874) or (SelectMonster == "Factory Staff")) then
-            Ms = "Factory Staff";
-            NameQuest = "Area2Quest";
-            QuestLv = 2;
-            NameMon = "Factory Staff";
-            CFrameQ = CFrame.new(635.61151123047, 73.096351623535, 917.81298828125);
-            CFrameMon = CFrame.new(533.22045898438, 128.46876525879, 355.62615966797);
-        elseif ((v197 == 875) or (v197 <= 899) or (SelectMonster == "Marine Lieutenan")) then
-            Ms = "Marine Lieutenant";
-            NameQuest = "MarineQuest3";
-            QuestLv = 1;
-            NameMon = "Marine Lieutenant";
-            CFrameQ = CFrame.new(- 2440.9934082031, 73.04190826416, - 3217.7082519531);
-            CFrameMon = CFrame.new(- 2489.2622070313, 84.613594055176, - 3151.8830566406);
-        elseif ((v197 == 900) or (v197 <= 949) or (SelectMonster == "Marine Captain")) then
-            Ms = "Marine Captain";
-            NameQuest = "MarineQuest3";
-            QuestLv = 2;
-            NameMon = "Marine Captain";
-            CFrameQ = CFrame.new(- 2440.9934082031, 73.04190826416, - 3217.7082519531);
-            CFrameMon = CFrame.new(- 2335.2026367188, 79.786659240723, - 3245.8674316406);
-        elseif ((v197 == 950) or (v197 <= 974) or (SelectMonster == "Zombie")) then
-            Ms = "Zombie";
-            NameQuest = "ZombieQuest";
-            QuestLv = 1;
-            NameMon = "Zombie";
-            CFrameQ = CFrame.new(- 5494.3413085938, 48.505931854248, - 794.59094238281);
-            CFrameMon = CFrame.new(- 5536.4970703125, 101.08577728271, - 835.59075927734);
-        elseif ((v197 == 975) or (v197 <= 999) or (SelectMonster == "Vampire")) then
-            Ms = "Vampire";
-            NameQuest = "ZombieQuest";
-            QuestLv = 2;
-            NameMon = "Vampire";
-            CFrameQ = CFrame.new(- 5494.3413085938, 48.505931854248, - 794.59094238281);
-            CFrameMon = CFrame.new(- 5806.1098632813, 16.722528457642, - 1164.4384765625);
-        elseif ((v197 == 1000) or (v197 <= 1049) or (SelectMonster == "Snow Trooper")) then
-            Ms = "Snow Trooper";
-            NameQuest = "SnowMountainQuest";
-            QuestLv = 1;
-            NameMon = "Snow Trooper";
-            CFrameQ = CFrame.new(607.05963134766, 401.44781494141, - 5370.5546875);
-            CFrameMon = CFrame.new(535.21051025391, 432.74209594727, - 5484.9165039063);
-        elseif ((v197 == 1050) or (v197 <= 1099) or (SelectMonster == "Winter Warrior")) then
-            Ms = "Winter Warrior";
-            NameQuest = "SnowMountainQuest";
-            QuestLv = 2;
-            NameMon = "Winter Warrior";
-            CFrameQ = CFrame.new(607.05963134766, 401.44781494141, - 5370.5546875);
-            CFrameMon = CFrame.new(1234.4449462891, 456.95419311523, - 5174.130859375);
-        elseif ((v197 == 1100) or (v197 <= 1124) or (SelectMonster == "Lab Subordinate")) then
-            Ms = "Lab Subordinate";
-            NameQuest = "IceSideQuest";
-            QuestLv = 1;
-            NameMon = "Lab Subordinate";
-            CFrameQ = CFrame.new(- 6061.841796875, 15.926671981812, - 4902.0385742188);
-            CFrameMon = CFrame.new(- 5720.5576171875, 63.309471130371, - 4784.6103515625);
-        elseif ((v197 == 1125) or (v197 <= 1174) or (SelectMonster == "Horned Warrior")) then
-            Ms = "Horned Warrior";
-            NameQuest = "IceSideQuest";
-            QuestLv = 2;
-            NameMon = "Horned Warrior";
-            CFrameQ = CFrame.new(- 6061.841796875, 15.926671981812, - 4902.0385742188);
-            CFrameMon = CFrame.new(- 6292.751953125, 91.181983947754, - 5502.6499023438);
-        elseif ((v197 == 1175) or (v197 <= 1199) or (SelectMonster == "Magma Ninja")) then
-            Ms = "Magma Ninja";
-            NameQuest = "FireSideQuest";
-            QuestLv = 1;
-            NameMon = "Magma Ninja";
-            CFrameQ = CFrame.new(- 5429.0473632813, 15.977565765381, - 5297.9614257813);
-            CFrameMon = CFrame.new(- 5461.8388671875, 130.36347961426, - 5836.4702148438);
-        elseif ((v197 == 1200) or (v197 <= 1249) or (SelectMonster == "Lava Pirate")) then
-            Ms = "Lava Pirate";
-            NameQuest = "FireSideQuest";
-            QuestLv = 2;
-            NameMon = "Lava Pirate";
-            CFrameQ = CFrame.new(- 5429.0473632813, 15.977565765381, - 5297.9614257813);
-            CFrameMon = CFrame.new(- 5251.1889648438, 55.164535522461, - 4774.4096679688);
-        elseif ((v197 == 1250) or (v197 <= 1274) or (SelectMonster == "Ship Deckhand")) then
-            Ms = "Ship Deckhand";
-            NameQuest = "ShipQuest1";
-            QuestLv = 1;
-            NameMon = "Ship Deckhand";
-            CFrameQ = CFrame.new(1040.2927246094, 125.08293151855, 32911.0390625);
-            CFrameMon = CFrame.new(921.1236
+
