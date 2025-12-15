@@ -1,55 +1,55 @@
 local v14 = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))();
 local v15 = v14:CreateWindow({
-    Title = "Bear Hub [Premium ]",-- thay tên bạn muốn đặt
-    SubTitle = "By Superquanghuy123 ",-- tên bạn
+    Title = "Bear Hud [Premium ]",-- thay tên bạn muốn đặt
+    SubTitle = "Superqianghuy123",-- tên bạn
     TabWidth = 100,
-    Theme = "Light",--màu
+    Theme = "light",--màu
     Acrylic = false,
     Size = UDim2.fromOffset(500, 320),
     MinimizeKey = Enum.KeyCode.End
 });
 local v16 = {
     Main = v15:AddTab({
-        Title = "Farming"
+        Title = "Tab Farming"
     }),
     Sea = v15:AddTab({
-        Title = "Sea Event"
+        Title = "Tab Volcano And Sea Event"
     }),
     ITM = v15:AddTab({
-        Title = "Farming Other"
+        Title = "Tab Farming Other"
     }),
     Setting = v15:AddTab({
-        Title = "Setting"
+        Title = "Setting Farm"
     }),
     Status = v15:AddTab({
-        Title = "Server"
+        Title = "Tab Status And Server"
     }),
     Stats = v15:AddTab({
-        Title = "Stats"
+        Title = "Tab Stats"
     }),
     Player = v15:AddTab({
-        Title = "Local Player"
+        Title = "Tab Local Player"
     }),
     Teleport = v15:AddTab({
-        Title = "Teleport"
+        Title = "Tab Teleport"
     }),
     Visual = v15:AddTab({
-        Title = "Visual"
+        Title = "Tab Visual"
     }),
     Fruit = v15:AddTab({
-        Title = "Fruit"
+        Title = "Tab Esp And Fruit"
     }),
     Raid = v15:AddTab({
-        Title = "Raid"
+        Title = "Tab Raid"
     }),
     Race = v15:AddTab({
-        Title = "Upgrade Race"
+        Title = "Tab Upgrade Race"
     }),
     Shop = v15:AddTab({
-        Title = "Shop"
+        Title = "Tab Shop"
     }),
     Misc = v15:AddTab({
-        Title = "Misc"
+        Title = "Tab Misc"
     })
 };
 local v17 = v14.Options;
@@ -383,5 +383,4 @@ function CheckLevel()
             QuestLv = 1;
             NameMon = "Ship Deckhand";
             CFrameQ = CFrame.new(1040.2927246094, 125.08293151855, 32911.0390625);
-            CFrameMon = CFrame.new(921.12365722656, 125.9839553833, 33088.328125);
-            if (_G.AutoLevel and ((CFra
+            CFrameMon = CFrame.new(921
