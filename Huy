@@ -1,9 +1,10 @@
+
 local v14 = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))();
 local v15 = v14:CreateWindow({
-    Title = "Bear Hud [Premium ]",-- thay tên bạn muốn đặt
-    SubTitle = "Superqianghuy123",-- tên bạn
+    Title = "Bear Hub [Premium ]",-- thay tên bạn muốn đặt
+    SubTitle = "By QuangHuy",-- tên bạn
     TabWidth = 100,
-    Theme = "light",--màu
+    Theme = "Light",--màu
     Acrylic = false,
     Size = UDim2.fromOffset(500, 320),
     MinimizeKey = Enum.KeyCode.End
@@ -383,4 +384,4 @@ function CheckLevel()
             QuestLv = 1;
             NameMon = "Ship Deckhand";
             CFrameQ = CFrame.new(1040.2927246094, 125.08293151855, 32911.0390625);
-            CFrameMon = CFrame.new(921
+            CFrameMon = CFrame.new(921.1236
