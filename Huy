@@ -1,4 +1,5 @@
-local v466 = loadstring(game:HttpGet("https://raw.githubusercontent.com/AnhDangNhoEm/UiRedz/refs/heads/main/RedzUiV.txt"))():MakeWindow({
+local v466 = loadstring(game:HttpGet("https://raw.githubusercontent.com/AnhDangNhoEm/UiRedz/refs/heads/main/RedzUiV.txt"))()
+:MakeWindow({
     Title = "Bear Hub",
     SubTitle = "by Quang Huy",
     SaveFolder = "Redz | redz lib v5.lua"
@@ -36,3 +37,79 @@ task.spawn(function()
         task.wait(0.3)
     end
 end)
+local v473 = true
+local v474 = nil
+local v475 = nil
+local v476 = nil
+local v477 = nil
+local function v480(v478)
+    local v479 = v478.Position - v476
+    l_ImageButton_0.Position = UDim2.new(v477.X.Scale, v477.X.Offset + v479.X, v477.Y.Scale, v477.Y.Offset + v479.Y)
+end
+l_ImageButton_0.InputBegan:Connect(function(v481)
+    if v481.UserInputType == Enum.UserInputType.Touch or v481.UserInputType == Enum.UserInputType.MouseButton1 then
+        v474 = true
+        v476 = v481.Position
+        v477 = l_ImageButton_0.Position
+        v481.Changed:Connect(function()
+            if v481.UserInputState == Enum.UserInputState.End then
+                v474 = false
+            end
+        end)
+    end
+end)
+l_ImageButton_0.InputChanged:Connect(function(v482)
+    if v482.UserInputType == Enum.UserInputType.Touch or v482.UserInputType == Enum.UserInputType.MouseMovement then
+        v475 = v482
+    end
+end)
+game:GetService("UserInputService").InputChanged:Connect(function(v483)
+    if v474 and v483 == v475 then
+        v480(v483)
+    end
+end)
+l_ImageButton_0.MouseButton1Click:Connect(function()
+    v473 = not v473
+    if v473 then
+        v466:Minimize(false)
+    else
+        v466:Minimize(true)
+    end
+end)
+local v484 = v466:MakeTab({"Th\195\180ng Tin | Info", "info"})
+local v485 = v466:MakeTab({"Farming", "home"})
+local v486 = v466:MakeTab({"Auto Fishing", "rbxassetid://127664059821666"})
+local v487 = v466:MakeTab({"Quest | Items", "swords"})
+local v488 = v466:MakeTab({"Volcano Dojo", "cake"})
+local v489 = v466:MakeTab({"Sea Event", "waves"})
+local v490 = v466:MakeTab({"Race V4", "crown"})
+local v491 = v466:MakeTab({"Raid Fruits", "cherry"})
+local v492 = v466:MakeTab({"Fruits | Check Stock", "apple"})
+local v493 = v466:MakeTab({"Teleport", "locate"})
+local v494 = v466:MakeTab({"PvP,Player", "user"})
+local v495 = v466:MakeTab({"Shop", "shoppingCart"})
+local v496 = v466:MakeTab({"Settings", "settings"})
+v484:AddDiscordInvite({
+    Name = "Follow TikTok",
+    Description = "TikTok",
+    Logo = "rbxassetid://134852113716171",
+    Invite = "https://www.tiktok.com/@huyscriptth?_r=1&_t=ZS-92ZjnBZSSjA"
+})
+v484:AddDiscordInvite({
+    Name = "Follow Facebook",
+    Description = "Facebook",
+    Logo = "rbxassetid://134852113716171",
+    Invite = "https://www.facebook.com/share/17q1WXNcBQ/"
+})
+v484:AddDiscordInvite({
+    Name = "Follow Youtube",
+    Description = "YouTube",
+    Logo = "rbxassetid://134852113716171",
+    Invite = "https://youtube.com/@ttquanghuy?si=hgV_obVLjhgxSBEq"
+})
+v484:AddDiscordInvite({
+    Name = "Follow TikTok",
+    Description = "TikTok",
+    Logo = "rbxassetid://134852113716171",
+    Invite = "https://www.tiktok.com/@huyckvkne?_r=1&_t=ZS-92ZjgILlydN"
+})
